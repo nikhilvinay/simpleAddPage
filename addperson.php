@@ -11,7 +11,7 @@
 }
 
 </style>
-<div class="container">
+<div class="container" style="background-color:#FCF8E3">
     <div class="row">
 		  <ul class="nav nav-tabs">
 			<li class="active"><a href="addperson.php">Add Person</a></li>
@@ -23,12 +23,12 @@
 	</div>
 	<div class="col-md-12" style="margin-top:5px;">
 		<div class="col-md-6">
-			<div class="panel panel-default">
+			<div class="panel panel-default"  style="background-color: aliceblue;">
 				<div class="panel-body">		
 					<div class="row">
 						<label class="col-md-3 lbltext">Person Name </label>
 						<div class="col-md-3">
-							<input type="text" class="col-sm-4 form-control" id="addField">
+							<input type="text" class="col-sm-4 form-control" id="addField" placeholder="Favourite Person Name">
                             <span id="checkName" style="align-text:center"></span>
 						</div>
 						<div class="col-md-3">
@@ -48,7 +48,7 @@
 			</div>
 		</div>
 		<div class="col-md-6">
-					<div class="panel panel-default">
+					<div class="panel panel-default"  style="background-color: aliceblue;">
 						<div class="panel-body showDataHere">
 						</div>
 					</div>

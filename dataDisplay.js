@@ -1,6 +1,5 @@
 function validation(whichPage)
 {
-    alert(whichPage);
     var addField=jQuery('#addField').val();
     if(addField=="")
         {
@@ -14,10 +13,7 @@ function validation(whichPage)
         {
          jQuery('#checkName').html("");   
         }
-    //jQuery('.showDataHere').html("<div class='row'><label class='col-md-4 lbltext'>Name</label><div class='col-md-6'>"+addField+"</div></div>");
-    //jQuery('.showDataHere').html("<div class='row'><label class='col-md-4 lbltext' id='getEditName' value="+addField+">Name</label><div class='col-md-6'>"+addField+"</div><div class='row' id='results'></div><div class='row' style='text-align:center'><input type='button' id='edit' class='btn' value='Edit' onclick='editThis()'style='background-color: antiquewhite;'></div></div>");
-    
-    jQuery('.showDataHere').html("<div class='row'><label class='col-md-4 lbltext' value="+addField+">Name</label><div class='col-md-6'><label id='getEditName' >"+addField+"</label></div><div class='row' id='results'></div><div class='row' style='text-align:center'><input type='button' id='edit' class='btn' value='Edit' onclick='editThis()'style='background-color: antiquewhite;'></div></div>");
+   jQuery('.showDataHere').html("<div class='row'><label class='col-md-4 lbltext' value="+addField+">Name</label><div class='col-md-6'><label id='getEditName' >"+addField+"</label></div><div class='row' id='results'></div><div class='row' style='text-align:center'><input type='button' id='edit' class='btn' value='Edit' onclick='editThis()'style='background-color: antiquewhite;'></div></div>");
     
     $.getJSON("http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?",
         {
